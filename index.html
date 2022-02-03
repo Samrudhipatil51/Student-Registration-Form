@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <img class="img" src="img/dc.jpg">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <h1 style="color: blue; font-family:'Courier New', Courier, monospace;"> Student Registration Form:-</h1>
+    </center>
+    <form action="/action_page.php">
+        <fieldset style="border-color: blue; border-width:5px;">
+            <legend style="border: 2px solid black;">Name</legend>
+            <label>First Name: <input type="text" placeholder="Enter your Name"></label>&nbsp;
+            <label>Last Name: <input type="text"></label>&nbsp;
+            <label>Birth-Date: <input type="date" name="BirthDate"></label>&nbsp;
+            <label>Roll No: <input type="text"></label>
+        </fieldset>
+        <br>
+        <fieldset style="border-width: 5px; border-color:brown">
+            <legend style="border: 2px solid red;">Gender</legend>
+            <label>Female: <input type="radio" name="radio"></label>&nbsp;
+            <label>Male: <input type="radio" name="radio"></label>&nbsp;
+            <label>Other: <input type="radio" name="radio"></label>
+        </fieldset>
+        <br>
+        <fieldset style="border-width: 5px; border-color:lightcoral">
+            <legend style="border:2px solid lawngreen;">Hobbies</legend>
+            <label>Gaming <input type="checkbox" name="Hobby"></label>&nbsp;
+            <label>Reading <input type="checkbox" name="Hobby"></label>&nbsp;
+            <label>Cooking <input type="checkbox" name="Hobby"></label>&nbsp;
+            <label>Travaling <input type="checkbox" name="Hobby"></label>&nbsp;
+        </fieldset>
+        <br>
+        <fieldset style="border-width: 5px; border-color:green;">
+            <legend style="border:2px solid red">College</legend>
+            <label>College Name: <input type="text" placeholder="Enter Name of College"></label>&nbsp;
+            <label>University: <input type="text" placeholder="Enter Univrtsity"></label>&nbsp;
+            <label>Department
+                <select>
+                       <option value="EXTC">EXTC</option>
+                       <option value="COMPUTER">COMPUTER</option>
+                       <option value="Electrical">ELECTRICAL</option>
+                       <option value="Mechincal">MECHINCAL</option>
+                </select>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset style="border-width: 5px; border-color:blueviolet;">
+            <legend style="border: 2px solid red;">Self Details</legend>
+            <label>Email-Id: <input type="email" name="Email" placeholder="Enter your E-mail"></label>&nbsp;
+            <label>Password: <input type="password" maxlength="6" name="Password" placeholder="Enter Your Password"></label>&nbsp;
+            <label>Phone No: <input type="text" class="form-control" id="Phone" placeholder="Phone" data-error="Enter Your Phone Number" maxlength="10" pattern="[7-9][0-9]{9}" required></label>
+            <label>Address:
+               <input type="textarea" rows=" 30 " cols="1" name="textarea">
+            </label>
+        </fieldset>
+        <fieldset style="border-width: 5px; border-color:lime; ">
+            <legend style="border: 2px solid brown; ">Submit</legend>
+            <button class="registerbtn " type="submit ">Submit</button>
+            <button class="registerbtn " type="reset ">Reset</button>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
